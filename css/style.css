@@ -1,0 +1,86 @@
+.pangolin-regular {
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    /*
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    */
+    font-family: "Pangolin", cursive;
+    margin: 0;
+    /*
+    color: #352106d6;
+    */
+    color: #352106;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../img/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 56px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+}
+
+
+.cell {
+    border: 3px solid #352106;
+    font-size: 4.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: 34px;
+}
+
+.cell[data-value="X"] {
+    color: #3f140d;
+}
+
+.cell[data-value="O"] {
+    color: #33220c;
+}
+
+.again {
+    height: 25px;
+    width: 70px;
+    background-color: burlywood;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cat {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+    max-width: 160px;
+    min-width: 130px;
+}
+
+/*
+.sign {
+    background-image: url("../img/sign.png");
+    border: 3px solid black;
+
+}
+*/
